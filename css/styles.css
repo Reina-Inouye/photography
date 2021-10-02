@@ -1,0 +1,212 @@
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  40% 20% 20% 30%;
+        grid-template-areas:
+        "outpic nameinfo"
+        "outpic frominput"
+        "messub messub"
+        "footer footer" ;
+        grid-gap: 0.3rem;
+        justify-content: center;
+    }
+}
+
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 15% 15% 15% 30%;
+    grid-template-areas:
+        "outpic" 
+        "nameinfo"
+        "frominput"
+        "messub"
+        "footer" ;
+    place-items: center;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.outpic {
+    grid-area: outpic;
+    border: 2px solid black !important;
+    box-shadow: 5px 5px  grey;
+    padding: 40px 15px 40px 15px;
+    margin: 0; 
+    /* width: 100%; */
+}
+.picture {
+    border-radius: 5px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nameinfo {
+    grid-area: nameinfo;
+    justify-content: center;
+}
+
+.facebook {
+    border: 10px;
+    border-color: black;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: orange;
+    /* padding: 10px 30px 10px 20px; */
+    margin-bottom: -30px;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.icontent {
+    background-color: lightgrey;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 25px;
+    padding: 20px auto 10px auto;
+    overflow: hiddden;
+    z-index: -1;
+    justify-content: center;
+}
+
+.icongroup {
+    /* width: 25vh; */
+    padding: 0;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.forminput {
+    grid-area: forminput;
+}
+
+.input {
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    color:  red;
+    font: 400px;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    /* width: 40vh; */
+    line-height: 2;
+}
+
+.input::placeholder {
+    color: grey;
+    font-size: 20px !important; 
+    overflow: visible;
+}
+
+.messsub {
+    grid-area: messub;
+}
+.message {
+    margin: 20px 10px 0 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    color:  lightgrey;
+    font: 20px;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid orange;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    width: 80%;
+    resize: none;
+}
+
+.message::placeholder {
+    font-size: 20px; 
+    opacity: 1;
+    overflow: visible;
+}
+
+.submit {
+    margin:auto;
+    /* margin: 0 10px 20px 10px; */
+    background-color:orange;
+    padding: 10px;
+    color:  black;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid orange;
+    border-radius: 0px 0px 10px 10px;
+    display: block;
+    width: 80%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* width:100%; */
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: orange;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+.footermenu {
+    padding-left: 0;
+    /* padding: 10px auto 10px auto !important;  */
+    text-align: center;
+}
+
+.footer-nav{
+    color:white;
+    font-size: 30px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer-link:link{
+    /* font: 40px !important; */
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:visited{
+    /* font: 40px !important; */
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    /* font: 40px !important; */
+    color: orange;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+}
