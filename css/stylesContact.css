@@ -19,14 +19,14 @@
 .container {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 15% 15% 15% 30%;
+    grid-template-rows: 30% 20% 10% 15% 20%;
     grid-template-areas:
         "outpic" 
         "nameinfo"
         "frominput"
         "messub"
         "footer" ;
-    place-items: center;
+    place-self: center;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
     grid-area: outpic;
     border: 2px solid black !important;
     box-shadow: 5px 5px  grey;
-    padding: 40px 15px 40px 15px;
+    padding: 8% 2% 8% 2%;
     margin: 0; 
     /* width: 100%; */
 }
@@ -47,6 +47,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+    vertical-align: middle;
 }
 
 .nameinfo {
@@ -54,19 +55,14 @@ body {
     justify-content: center;
 }
 
-.facebook {
-    border: 10px;
-    border-color: black;
-    border-radius: 50%;
-}
-
 .name {
-    font-size: 40px;
+    font-size: 1.75rem;
+    line-height: 2;
     font-weight: bold;
     background-color: black;
     color: orange;
     /* padding: 10px 30px 10px 20px; */
-    margin-bottom: -30px;
+    margin-bottom: -14%;
     width: 70%;
     text-align: center;
     z-index: 100;
@@ -86,14 +82,16 @@ body {
 
 .icongroup {
     /* width: 25vh; */
-    padding: 0;
+    padding-top: 9%; 
     margin-left: auto ;
     margin-right: auto;
-    margin-top: 30px;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
 }
 
+.infotext {
+  font-size: 1rem;
+}
 
 .forminput {
     grid-area: forminput;
@@ -103,19 +101,17 @@ body {
     margin: 20px 10px 20px 10px;
     padding: 10px;
     color:  red;
-    font: 400px;
-    font-family: "Roboto", sans-serif;
     border: 2px solid orange;
     border-radius: 10px;
     display: block;
     width: 80%;
     /* width: 40vh; */
-    line-height: 2;
+    line-height: 1;
 }
 
 .input::placeholder {
     color: grey;
-    font-size: 20px !important; 
+    font-size: 1rem !important; 
     overflow: visible;
 }
 
@@ -123,11 +119,9 @@ body {
     grid-area: messub;
 }
 .message {
-    margin: 20px 10px 0 10px;
-    padding: 10px;
+    /* margin: 20px 10px 0 10px; */
     margin-bottom: 0;
     color:  lightgrey;
-    font: 20px;
     font-family: "Roboto", sans-serif;
     border: 2px solid orange;
     border-radius: 10px 10px 0px 0px;
@@ -137,8 +131,10 @@ body {
 }
 
 .message::placeholder {
-    font-size: 20px; 
+    font-size: 1rem; 
     opacity: 1;
+    padding-top: 2%;
+    padding-left: 2%;
     overflow: visible;
 }
 
@@ -148,7 +144,7 @@ body {
     background-color:orange;
     padding: 10px;
     color:  black;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Roboto", sans-serif;
     border: 2px solid orange;
     border-radius: 0px 0px 10px 10px;
@@ -162,16 +158,16 @@ body {
     color: white;
     text-align: center;
     /* width:100%; */
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 1.25rem;
     font-weight: bold;
     background-color: black;
     color: orange;
-    padding: 10px 20px 10px 20px;
+    /* padding: 10px 20px 10px 20px; */
     text-align: center;
     z-index: 100;
     text-decoration: none;
@@ -189,29 +185,27 @@ body {
 
 .footer-nav{
     color:white;
-    font-size: 30px;
+    font-size: 1rem;
     display: inline-block;
-    padding: 15px;
+    padding: 4%;
 }
 
 .footer-link:link{
-    /* font: 40px !important; */
     color: white;
     text-decoration: none;
 }
 
 .footer-link:visited{
-    /* font: 40px !important; */
     color: white;
     text-decoration: none;
 }
 
 .footer-link:hover{
-    /* font: 40px !important; */
     color: orange;
     text-decoration: none;
 }
 
 .copyright {
     text-align: center;
+    font-size: 0.75rem;
 }
