@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Core theme CSS -->
     <link href="css/stylesIndex.css" rel="stylesheet" />
 
@@ -14,26 +16,42 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar">
+            <a href="#" class="navbar-brand">LOGO</a>
+            <button class="toggle-collapse">
+                <i class="fa fa-bars fa-lg"></i>
+            </button>
+            <div class="navbar-collapse"/>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/photos.html">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
 
-    <div class="navbar">
-        <a href="#"><img class="logo" src="images/learnabit-logo.svg" alt="Learn-a-bit-logo"
-            title="Learn-a-bit-logo"/></a>
-        <ul class="navmenu">
-          <li class="nav"><a class="nav-link" href="/photos.html">Photos</a></li>
-          <li class="nav"><a class="nav-link" href="/pricing.html">Pricing</a></li>
-          <li class="nav"><a class="nav-link" href="/reviews.html">Reviews</a></li>
-          <li class="nav"><a class="nav-link" href="/contact.html">Contact</a></li>
-        </ul>
-    </div>
-    
+    <div class="Heading">Heading</div>
 
-    Heading
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt
-    ut labore et dolore magna ali
+    <p class="para">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt
+        ut labore et dolore magna ali</p>
 
-    Learn More
+    <a href="/#" class="button">Learn More</a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-collapse').click(function () {
+                $('.navbar-collapse').toggleClass("collapse");
+            })
+        });
+    </script>
 
 </body>
 
