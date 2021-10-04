@@ -41,8 +41,8 @@ body {
 
   .picture {
       object-fit: cover;
-      border: solid 5px white;
-      border-radius: 5px;
+      border: solid 2px white;
+      border-radius: 7px;
       transition: 0.3s;
       width: 100%;
       max-width: 20rem;

@@ -1,15 +1,15 @@
-
-
+.nav-link {
+    color: black !important;
+}
 .container {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 20% 10% 15% 20%;
+    /* grid-template-rows: 30% 20% 10% 15% 20%; */
     grid-template-areas:
         "outpic" 
         "nameinfo"
         "frominput"
-        "messub"
-        "footer" ;
+        "messub";
     place-self: center;
 }
 
@@ -23,7 +23,7 @@ body {
     box-shadow: 5px 5px  grey;
     padding: 8% 2% 8% 2%;
     margin: 0; 
-    /* width: 100%; */
+    overflow: hidden;
 }
 .picture {
     border-radius: 5px;
@@ -32,11 +32,13 @@ body {
     margin: 0;
     width: 100%;
     vertical-align: middle;
+    overflow: stretch;
 }
 
 .nameinfo {
     grid-area: nameinfo;
     justify-content: center;
+    margin: auto;
 }
 
 .name {
@@ -46,18 +48,20 @@ body {
     background-color: black;
     color: orange;
     /* padding: 10px 30px 10px 20px; */
-    margin-bottom: -14%;
+    margin: 2rem auto 0 auto;
     width: 70%;
     text-align: center;
     z-index: 100;
     position: relative;
+    top: 1.75rem;
 }
 
 .icontent {
-    background-color: lightgrey;
+    position: relative;
+    background-color: darkgrey;
     border-radius: 5px;
     width: 80%;
-    margin-top: 25px;
+    margin: 0 auto 0 auto;
     padding: 20px auto 10px auto;
     overflow: hiddden;
     z-index: -1;
@@ -66,7 +70,7 @@ body {
 
 .icongroup {
     /* width: 25vh; */
-    padding-top: 9%; 
+    padding-top: 12%; 
     margin-left: auto ;
     margin-right: auto;
     font-size: 2rem;
@@ -75,6 +79,7 @@ body {
 
 .infotext {
   font-size: 1rem;
+  padding:1rem;
 }
 
 .forminput {
@@ -89,7 +94,7 @@ body {
     border-radius: 10px;
     display: block;
     width: 80%;
-    /* width: 40vh; */
+    margin: 1rem auto 2rem auto;
     line-height: 1;
 }
 
@@ -104,13 +109,14 @@ body {
 }
 .message {
     /* margin: 20px 10px 0 10px; */
-    margin-bottom: 0;
+    margin: 0 auto 0 auto;
     color:  lightgrey;
     font-family: "Roboto", sans-serif;
     border: 2px solid orange;
     border-radius: 10px 10px 0px 0px;
     display: block;
-    width: 80%;
+    width: 82.5%;
+    height: 5rem;
     resize: none;
 }
 
@@ -123,8 +129,7 @@ body {
 }
 
 .submit {
-    margin:auto;
-    /* margin: 0 10px 20px 10px; */
+    margin:0 auto 3rem auto;
     background-color:orange;
     padding: 10px;
     color:  black;
@@ -133,25 +138,23 @@ body {
     border: 2px solid orange;
     border-radius: 0px 0px 10px 10px;
     display: block;
-    width: 80%;
+    width: 85%;
 }
 
 .footer {
-    grid-area: footer;
     background-color: black;
     color: white;
     text-align: center;
-    /* width:100%; */
+    width:100%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: black;
     color: orange;
-    /* padding: 10px 20px 10px 20px; */
     text-align: center;
     z-index: 100;
     text-decoration: none;
@@ -169,7 +172,7 @@ body {
 
 .footer-nav{
     color:white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     display: inline-block;
     padding: 4%;
 }
@@ -201,13 +204,42 @@ body {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:  40% 20% 20% 30%;
+        grid-template-rows:  40% 20% 20%;
         grid-template-areas:
         "outpic nameinfo"
         "outpic frominput"
-        "messub messub"
-        "footer footer" ;
+        "messub messub";
         grid-gap: 0.3rem;
         justify-content: center;
     }
+
+    .nameinfo{
+        margin-top: -1rem;
+    }
+    .name {
+        margin: 0 auto 0 0; 
+    }
+    .icontent {
+        margin:0;
+    }
+    .infotext {
+        padding:1rem;
+        margin: -1.5rem auto 0 0;
+    }
+    .input {
+        margin: 1.5rem auto 0 0;
+        width: 75%;
+    }
+    .messsub {
+        margin: 1rem;
+    }
+    .outpic {
+        width: 75%;
+        justify-self: end;
+    }
+    .submit {
+        width:83.5%;
+        margin: 0 auto 1rem auto;
+    }
+
 }
