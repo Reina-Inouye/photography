@@ -1,5 +1,16 @@
 
 
+
+
+.container {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(8,10rem);
+    grid-gap: .2rem;
+    /* justify-content: center; */
+}
+
 body {
     background-color: darkgray;
 }
@@ -17,22 +28,124 @@ body {
 }
 
 .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8, .pic9 {
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    border: solid 5px white;
-    border-radius: 5px;
+    /* border: solid 5px red;
+    border-radius: 5px; */
     transition: 0.3s;
-    width: 40%;
+    max-width: 20rem;
     max-height:15rem;
-    margin: 3rem auto 3rem auto;
-    padding:0%;
+    margin: 1rem;
+    padding:0%; 
+    width: 90%;
+    overflow: fill;
   }
 
-  .pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover, .pic5:hover, .pic6:hover, .pic7:hover, .pic8:hover, .pic9:hover {
-    width: 50%;
-    max-height:18.75rem;
-  }
   .picture {
       object-fit: cover;
+      border: solid 5px white;
+      border-radius: 5px;
+      transition: 0.3s;
+      width: 100%;
+      max-width: 20rem;
+      max-height:15rem;
   }
 
+ .pic1{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+ }
+ .pic2 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+ }
+ .pic3{
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+ }
+ .pic4{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+ }
+ .pic5{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+ }
+ .pic6{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+ }
+ .pic7{
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+ }
+ .pic8{
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+ }
+ .pic9{
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+ }
  
+ @media only screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: repeat(4,18rem);
+        grid-gap: .2rem;
+    }
+    .pic1{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+     }
+     .pic2 {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+     }
+     .pic3{
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: center;
+     }
+     .pic4{
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+     }
+     .pic5{
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+     }
+     .pic6{
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: center;
+     }
+     .pic7{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+     }
+     .pic8{
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: center;
+     }
+     .pic9{
+        grid-column: 3;
+        grid-row: 3;
+        justify-self: center;
+     }
+     
+}

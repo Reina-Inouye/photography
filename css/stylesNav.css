@@ -1,30 +1,5 @@
 
-@media screen and (max-width: 600px) {
-    .navbar-brand {
-        display: inline-block;
-        float:none;
-    }
-    .toggle-collapse {
-        display: inline-block !important;
-    }
-    .navbar-nav {
-        color: white;
-        padding:0%;
-    }
-    .navbar .navbar-nav .nav-item {
-        display: block !important;
-        list-style: none;
-    }
 
-    .navbar-collapse {
-        width:100%;
-        overflow: hidden;
-        text-align: center;
-        height:0vh;
-        transition: all 499ms ease;
-    }
-
-}
 
 .navbar {
     width:100%;
@@ -83,10 +58,12 @@
     margin: 1rem 1rem;
     background-color: transparent;
     color: rgba(232, 232, 232, 0.3);
+    /* color: white; */
     border: 1px solid rgb(233, 233, 233);
     border-radius: 3px;
     cursor: pointer;
     display: none;
+
 }
 .toggle-collapse:hover {
     color: rgb(233, 233, 233);
@@ -95,4 +72,29 @@
     height: 30vh;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+        display: inline-block;
+        float:none;
+    }
+    .toggle-collapse {
+        display: inline-block;
+    }
+    .navbar-nav {
+        color: white;
+        padding:0%;
+    }
+    .navbar .navbar-nav .nav-item {
+        display: block;
+        list-style: none;
+    }
 
+    .navbar-collapse {
+        width:100%;
+        overflow: hidden;
+        text-align: center;
+        height:0vh;
+        transition: all 499ms ease;
+    }
+
+}
