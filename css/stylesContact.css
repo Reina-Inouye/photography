@@ -1,20 +1,4 @@
 
-@media only screen and (min-width: 600px) {
-    .container {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:  40% 20% 20% 30%;
-        grid-template-areas:
-        "outpic nameinfo"
-        "outpic frominput"
-        "messub messub"
-        "footer footer" ;
-        grid-gap: 0.3rem;
-        justify-content: center;
-    }
-}
-
 
 .container {
     display:grid;
@@ -208,4 +192,22 @@ body {
 .copyright {
     text-align: center;
     font-size: 0.75rem;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  40% 20% 20% 30%;
+        grid-template-areas:
+        "outpic nameinfo"
+        "outpic frominput"
+        "messub messub"
+        "footer footer" ;
+        grid-gap: 0.3rem;
+        justify-content: center;
+    }
 }
