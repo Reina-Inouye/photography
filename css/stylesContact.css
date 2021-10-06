@@ -1,10 +1,25 @@
 .nav-link {
     color: black !important;
 }
+
+
+.nav-link:hover{
+    color: orange !important;
+} 
+
+
+.icon {
+    color:darkgray !important;
+    border: 1px solid darkgray !important;
+}
+
+.nav-item .active {
+    color: orange !important;
+  }
+
 .container {
     display:grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 30% 20% 10% 15% 20%; */
     grid-template-areas:
         "outpic" 
         "nameinfo"
@@ -32,6 +47,18 @@ body {
     margin: 0;
     width: 100%;
     vertical-align: middle;
+    overflow: stretch;
+}
+
+.picturediv {
+    background-image: url("/images/clem-onojeghuo-jUAcCtbMb0k-unsplash.jpg") ;
+    min-height: 100%;
+    position: relative;
+    background-size: 115%;
+    border-radius: 5px;
+    min-width: 100%;
+    padding: 8% 2% 8% 2%;
+    vertical-align: top;
     overflow: stretch;
 }
 

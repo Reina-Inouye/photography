@@ -1,7 +1,20 @@
-body {
-    background-color: darkgray;
+body { 
+    background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
+    margin:0;
+    padding:0;
 }
 
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "review1" 
+        "review2"
+        "review3"
+        "review4";
+    place-self: center;
+}
 
 .Heading {
     font-family: "Poppins", sans-serif;
@@ -14,3 +27,38 @@ body {
     text-transform: uppercase;
     text-shadow: 5px 3px 3px darkslategrey;
 }
+
+.review1, .review2, .review3, .review4  {
+    grid-area: review1;
+    width: 22rem;
+    height: 14rem;
+    background-color: orange;
+    margin: 5rem auto 5rem;
+    border: solid orange;
+    border-radius: 10px;
+}
+
+.portrait {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: black;
+    float:left;
+}
+
+.name {
+    padding: 1rem;
+}
+
+i {
+    color: white;
+}
+
+.clear {
+    background-color: transparent;
+}
+.para {
+    margin:0;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
