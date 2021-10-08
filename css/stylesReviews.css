@@ -1,19 +1,17 @@
 body { 
     background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
+    font-family: "Poppins", sans-serif;
     margin:0;
     padding:0;
 }
 
 
 .container {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "review1" 
-        "review2"
-        "review3"
-        "review4";
-    place-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .Heading {
@@ -28,31 +26,52 @@ body {
     text-shadow: 5px 3px 3px darkslategrey;
 }
 
-.review1, .review2, .review3, .review4  {
-    grid-area: review1;
-    width: 22rem;
-    height: 14rem;
-    background-color: orange;
-    margin: 5rem auto 5rem;
-    border: solid orange;
-    border-radius: 10px;
+.review {
+    width: 25rem;
+    height: 13rem;
+    background-color: #ffd36a;
+    margin: 1rem;
+    /* border: solid orange; */
+    border-radius: 15px;
 }
 
-.portrait {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background-color: black;
+.avatar {
+    max-width: 75px;
+    height: auto;
     float:left;
+    margin: 0.75rem
 }
 
 .name {
-    padding: 1rem;
+    font-size: 24px;
+    margin:8px
 }
 
 i {
     color: white;
+    padding: 0.1rem;
+    margin: auto;
 }
+
+.icons {
+    margin:auto;
+}
+
+.reviewtop {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    }
+
+.namestar {
+display: flex;
+flex-direction: column;
+margin:0;
+padding:0;
+justify-content: start;
+align-items: flex-start;
+}
+
 
 .clear {
     background-color: transparent;
