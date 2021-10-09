@@ -1,6 +1,9 @@
 
 body {
     background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
+    font-family: "Poppins", sans-serif;
+    padding:0;
+    margin: 0;
 }
 
 
@@ -8,10 +11,77 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     padding: 2rem 2rem;
-    margin: auto;
+    margin: 2rem auto 3rem auto;
     text-align: center;
     text-shadow: 1px 2px #666;
     color: white;
     text-transform: uppercase;
     text-shadow: 5px 3px 3px darkslategrey;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricedeals {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    margin:auto;
+    padding: 6rem 2rem 4rem 2rem;
+    width: 13rem;
+    height: 15rem;
+    margin: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.photo {
+    font-size: 30px;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+
+.price {
+    font-size: 60px;;
+    font-weight: bold;
+    padding:0;
+    margin:0
+}
+
+.perphoto {
+    font-size: 25px;
+    padding:0;
+    margin:0;
+}
+
+.button {
+    width: 10rem;
+    height: 3rem;
+    background-color: orange;
+    font-size: 25px;
+    margin: auto;
+    padding: 5px 0 0px 0;
+    border-radius: 15px;
+    text-decoration: none;
+    display: none;
+}
+
+.pricedeals:hover{
+    opacity: 1;
+    transition: 0.9s;
+    transform: scale(1.1);
+    border: 4px solid orange
+}
+
+.pricedeals:hover .button{
+    display: block;
 }

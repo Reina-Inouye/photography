@@ -18,7 +18,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     padding: 2rem 2rem;
-    margin: auto;
+    margin: 2rem auto 3rem auto;
     text-align: center;
     text-shadow: 1px 2px #666;
     color: white;
@@ -44,17 +44,17 @@ body {
 
 .name {
     font-size: 24px;
-    margin:8px
+    margin:10px auto 4px 0;
 }
 
 i {
     color: white;
     padding: 0.1rem;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .icons {
-    margin:auto;
+    /* margin:auto; */
 }
 
 .reviewtop {

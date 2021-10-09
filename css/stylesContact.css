@@ -1,8 +1,8 @@
-.nav-link {
+/* .nav-link {
     color: black !important;
-}
+} */
 
-
+/* 
 .nav-link:hover{
     color: orange !important;
 } 
@@ -11,13 +11,14 @@
 .icon {
     color:darkgray !important;
     border: 1px solid darkgray !important;
-}
+} */
 
 .nav-item .active {
     color: orange !important;
   }
 
 .container {
+    margin-top: 5rem;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -30,11 +31,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
 }
 
 .outpic {
     grid-area: outpic;
     border: 2px solid black !important;
+    background-color: white;
     box-shadow: 5px 5px  grey;
     padding: 8% 2% 8% 2%;
     margin: 0; 
@@ -85,7 +88,7 @@ body {
 
 .icontent {
     position: relative;
-    background-color: darkgrey;
+    background-color: lightslategray;
     border-radius: 5px;
     width: 80%;
     margin: 0 auto 0 auto;
