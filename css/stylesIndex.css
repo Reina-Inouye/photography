@@ -1,7 +1,7 @@
 
 body {
-    background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
-    background-size: 300%;
+    background-image: url("/images/nordwood-themes-F3Dde_9thd8-unsplash.jpg");
+    background-size: 250%;
     font-family: "Poppins", sans-serif;
     /* background-color: darkslategrey; */
     color: white;
@@ -51,9 +51,13 @@ body {
     text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
+    body {
+        background-size: 150%; 
+        background-repeat: none ;
+    }
     .para {
-        width: 50%;
+        width: 40%;
     }
 }
 

@@ -1,0 +1,258 @@
+
+
+
+.container {
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/images/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
+}
+
+.outpic {
+    border: 2px solid black !important;
+    background-color: white;
+    box-shadow: 5px 5px  grey;
+    padding: 8% 2% 8% 2%;
+    margin: auto; 
+    overflow: hidden;
+    width:90%;
+}
+
+.picture {
+    border-radius: 5px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    vertical-align: middle;
+    overflow: stretch;
+}
+
+/* .picturediv {
+    background-image: url("/images/clem-onojeghuo-jUAcCtbMb0k-unsplash.jpg") ;
+    min-height: 100%;
+    position: relative;
+    background-size: 115%;
+    border-radius: 5px;
+    min-width: 100%;
+    padding: 8% 2% 8% 2%;
+    vertical-align: top;
+    overflow: stretch;
+} */
+
+.nameinfo {
+    justify-content: center;
+    margin: auto;
+}
+
+.name {
+    font-size: 1.75rem;
+    line-height: 2;
+    font-weight: bold;
+    background-color: black;
+    color: orange;
+    /* padding: 10px 30px 10px 20px; */
+    margin: 2rem auto 0 auto;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 1.75rem;
+}
+
+.icontent {
+    position: relative;
+    background-color: lightslategray;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 20px auto 10px auto;
+    overflow: hiddden;
+    z-index: -1;
+    justify-content: center;
+}
+
+.icongroup {
+    /* width: 25vh; */
+    padding-top: 12%; 
+    margin-left: auto ;
+    margin-right: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.infotext {
+  font-size: 1rem;
+  padding:1rem;
+}
+
+/* .forminput {
+    display:flex;
+} */
+
+.input {
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    color:  red;
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+    line-height: 1;
+}
+
+.input::placeholder {
+    color: grey;
+    font-size: 1rem !important; 
+    overflow: visible;
+}
+
+.messsub {
+    grid-area: messub;
+}
+.message {
+    /* margin: 20px 10px 0 10px; */
+    margin: 0 auto 0 auto;
+    color:  lightgrey;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid orange;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    width: 82.5%;
+    height: 5rem;
+    resize: none;
+}
+
+.message::placeholder {
+    font-size: 1rem; 
+    opacity: 1;
+    padding-top: 2%;
+    padding-left: 2%;
+    overflow: visible;
+}
+
+.submit {
+    margin:0 auto 3rem auto;
+    background-color:orange;
+    padding: 10px;
+    color:  black;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid orange;
+    border-radius: 0px 0px 10px 10px;
+    display: block;
+    width: 85%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width:100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.logolink  {
+    text-decoration: none;
+}
+
+.footermenu {
+    padding-left: 0;
+    /* padding: 10px auto 10px auto !important;  */
+    text-align: center;
+}
+
+.footer-nav{
+    color:white;
+    font-size: 1.25rem;
+    display: inline-block;
+    padding: 4%;
+}
+
+.footer-link:link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .outpic {
+        width: 70%;
+        margin:auto;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .picname{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        margin:auto;
+    }
+
+    .nameinfoform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+    .nameinfo{
+        margin-top: -1rem;
+    }
+    .name {
+        margin: 0 auto 0 0; 
+    }
+    .icontent {
+        margin:0;
+    }
+    .infotext {
+        padding:1rem;
+        margin: -1.5rem auto 0 0;
+    }
+    .input {
+        margin: 1.5rem auto 0 0;
+        width: 75%;
+    }
+    .messsub {
+        margin: 1rem;
+    }
+    .outpic {
+        width: 50%;
+    }
+    .submit {
+        width:83.5%;
+        margin: 0 auto 1rem auto;
+    }
+
+}
